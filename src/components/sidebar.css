@@ -1,51 +1,31 @@
 
 .sidebar {
-    background-color: #f7f7f7;
-  }
-  
-  .sidebar-header {
-    padding: 15px 20px;
-  }
-  
-  .sidebar-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #2d3748;
-  }
-  
-  .sidebar-link {
-    display: flex;
-    align-items: center;
-    inline-size: 100%;
-    padding: 12px 20px;
-    text-decoration: none;
-    color: #2d3748;
-    font-size: 16px;
-    transition: background-color 0.2s ease;
-  }
-  
-  .sidebar-link:hover {
-    background-color: #e2e8f0;
-  }
-  
-  .sidebar-icon {
-    margin-inline-end: 12px;
-  }
-  
-  .sidebar-footer {
-    padding: 15px 20px;
-    border-block-start: 1px solid #e2e8f0;
-  }
-  
-  .sidebar-logout {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #e53e3e;
-    font-size: 16px;
-  }
-  
-  .sidebar-logout:hover {
-    background-color: #ffe5e5;
-  }
-  
+  background-color: #f1f1f1;
+}
+
+.sidebar-header {
+  padding: 10px;
+  text-align: center;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.sidebar-link {
+  padding: 8px;
+  margin: 4px 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar-link:hover {
+  background-color: #ddd;
+}

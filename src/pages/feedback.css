@@ -1,21 +1,17 @@
 
 .feedback-container {
-    display: flex;
-  }
-  
-  .feedback-content {
-    margin-inline-start: 260px; 
-    padding: 20px;
-    inline-size: calc(100% - 260px);
-  }
-  
-  .feedback-title {
-    margin-block-end: 20px;
-    color: #2d3748;
-  }
-  
-  .feedback-card {
-    background-color: #ffffff;
-    padding: 20px;
-  }
-  
+  padding: 20px;
+}
+
+.feedback-content {
+  padding: 20px;
+}
+
+.feedback-title {
+  margin-bottom: 20px;
+}
+
+.feedback-card {
+  background-color: #fff;
+  padding: 20px;
+}

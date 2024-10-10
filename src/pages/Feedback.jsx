@@ -1,30 +1,20 @@
 
-import { Paper, Text, Group,  Title } from '@mantine/core';
+import { Paper, Text, Title } from '@mantine/core';
 import { Sidebar } from '../components/Sidebar';
 import './feedback.css'; 
+
 function Feedback() {
   return (
     <div className="feedback-container">
-      <Sidebar />
+      <Sidebar /> 
       <div className="feedback-content">
         <Title order={2} className="feedback-title">Feedback Overview</Title>
-        <Paper shadow="sm" radius="md" p="xl" withBorder className="feedback-card">
-          <Group position="apart">
-            <Text>Total Feedbacks</Text>
-            <Text>569</Text>
-          </Group>
-          <Group position="apart">
-            <Text>Positive</Text>
-            <Text>25%</Text>
-          </Group>
-          <Group position="apart">
-            <Text>Neutral</Text>
-            <Text>35%</Text>
-          </Group>
-          <Group position="apart">
-            <Text>Negative</Text>
-            <Text>40%</Text>
-          </Group>
+       
+        <Paper shadow="sm" p="md" className="feedback-card">
+          <Text>Total Feedbacks: 569</Text>
+          <Text>Positive: 25%</Text>
+          <Text>Neutral: 35%</Text>
+          <Text>Negative: 40%</Text>
         </Paper>
       </div>
     </div>

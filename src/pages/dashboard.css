@@ -1,34 +1,13 @@
 
 .dashboard-container {
-    display: flex;
-  }
-  
-  .dashboard-content {
-    margin-inline-start: 260px; 
-    padding: 20px;
-    inline-size: calc(100% - 260px);
-  }
-  
-  .dashboard-title {
-    margin-block-end: 20px;
-    color: #2d3748;
-  }
-  
-  .dashboard-stats {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .dashboard-card {
-    flex: 1;
-    min-inline-size: 220px;
-    background-color: #ffffff;
-    text-align: center;
-  }
-  
-  .dashboard-card:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.2s ease-in-out;
-  }
-  
+  padding: 20px;
+}
+
+.dashboard-title {
+  margin-bottom: 20px;
+}
+
+.dashboard-card {
+  background-color: #fff;
+  padding: 20px;
+}
