@@ -1,10 +1,10 @@
-/* src/pages/dashboard.css */
+
 .dashboard-container {
     display: flex;
   }
   
   .dashboard-content {
-    margin-inline-start: 260px; /* Aligns content to the right of the sidebar */
+    margin-inline-start: 260px; 
     padding: 20px;
     inline-size: calc(100% - 260px);
   }

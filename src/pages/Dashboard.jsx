@@ -1,9 +1,9 @@
-// src/pages/Dashboard.jsx
+
 
 import { Paper, Group, Title, Text } from '@mantine/core';
 import { Sidebar } from '../components/Sidebar';
 import './dashboard.css'; 
-export function Dashboard() {
+ function Dashboard() {
   return (
     <div className="dashboard-container">
       <Sidebar />
@@ -34,3 +34,5 @@ export function Dashboard() {
     </div>
   );
 }
+
+export default Dashboard;

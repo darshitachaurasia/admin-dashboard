@@ -2,7 +2,7 @@
 import { Paper, Text, Group,  Title } from '@mantine/core';
 import { Sidebar } from '../components/Sidebar';
 import './feedback.css'; 
-export function Feedback() {
+function Feedback() {
   return (
     <div className="feedback-container">
       <Sidebar />
@@ -30,3 +30,5 @@ export function Feedback() {
     </div>
   );
 }
+
+export default Feedback;

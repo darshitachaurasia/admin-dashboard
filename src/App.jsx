@@ -1,16 +1,28 @@
-// src/App.jsx
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Dashboard } from './pages/Dashboard';
-import { Feedback } from './pages/Feedback';
+import {Sidebar} from './components/Sidebar';
+import {Dashboard} from './pages/Dashboard';
+import {Feedback} from './pages/Feedback';
+import { MantineProvider } from '@mantine/core';
 
-export default function App() {
+function App() {
   return (
+    <MantineProvider>
     <Router>
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/feedback" element={<Feedback />} />
-      </Routes>
+      <div >
+        <Sidebar />
+        <div >
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/feedback" element={<Feedback />} />
+          </Routes>
+        </div>
+      </div>
     </Router>
+    </MantineProvider>
   );
 }
+
+export default App;
+

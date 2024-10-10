@@ -1,4 +1,4 @@
-// src/components/Sidebar.jsx
+
 
 import { Navbar, Group, ScrollArea, Code } from '@mantine/core';
 import {
@@ -7,7 +7,7 @@ import {
   IconUsers,
   IconLogout,
 } from '@tabler/icons-react';
-import './sidebar.css'; // Import the CSS file for sidebar styles
+import './sidebar.css'; 
 
 const navItems = [
   { label: 'Home', icon: IconGauge, link: '/' },
@@ -17,16 +17,17 @@ const navItems = [
 ];
 
 export function Sidebar() {
+    console.log("Sidebar rendered!");
   return (
     <Navbar width={{ base: 260 }} p="xs" className="sidebar">
-      {/* Navbar Header Section */}
+      
       <Navbar.Section className="sidebar-header">
         <Group position="apart">
           <Code className="sidebar-title">Admin Panel</Code>
         </Group>
       </Navbar.Section>
 
-      {/* Navbar Links Section */}
+    
       <Navbar.Section grow component={ScrollArea} mx="-xs" px="xs">
         {navItems.map((item) => (
           <a
@@ -40,7 +41,7 @@ export function Sidebar() {
         ))}
       </Navbar.Section>
 
-      {/* Navbar Footer Section */}
+     
       <Navbar.Section className="sidebar-footer">
         <a href="#" className="sidebar-logout">
           <IconLogout className="sidebar-icon" />
