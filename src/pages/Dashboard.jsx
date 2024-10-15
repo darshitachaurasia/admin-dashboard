@@ -1,18 +1,28 @@
 
-import { Title, Paper, Text } from '@mantine/core';
+import React from 'react';
 import './dashboard.css';
 
-function Dashboard() {
+const Dashboard = () => {
   return (
     <div className="dashboard-container">
-      <Title order={2} className="dashboard-title">Dashboard Overview</Title>
-      <Paper shadow="sm" radius="md" p="md" className="dashboard-card">
-        <Text>Welcome to the Dashboard!</Text>
-        <Text>This is your overview section.</Text>
-      </Paper>
+      <header className="dashboard-header">
+        <h1 className="dashboard-title">Serene <strong>MINDS</strong></h1>
+        <p className="dashboard-date">Monday, 7 September 2024</p>
+      </header>
+   
+      <div className="dashboard-grid">
+        <div className="dashboard-box"></div>
+        <div className="dashboard-box"></div>
+        <div className="dashboard-box"></div>
+        <div className="dashboard-box"></div>
+        <div className="dashboard-box large-box"></div>
+        <div className="dashboard-box med-box"></div>
+        <div className="dashboard-box large-box"></div>
+        <div className="dashboard-box med-box"></div>
+        
+      </div>
     </div>
   );
-}
+};
 
 export default Dashboard;
-

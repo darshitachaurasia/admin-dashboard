@@ -1,13 +1,44 @@
-
 .dashboard-container {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  width: 90%;
   padding: 20px;
 }
 
-.dashboard-title {
+.dashboard-header {
+  text-align: left;
   margin-bottom: 20px;
 }
 
-.dashboard-card {
-  background-color: #fff;
-  padding: 20px;
+.dashboard-title {
+  font-size: 24px;
+}
+
+.dashboard-date {
+  font-size: 14px;
+  color: #777;
+}
+
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.dashboard-box {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  height: 154px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.large-box {
+  grid-column: span 3;
+  height: 2fr;
+}
+.med-box{
+  grid-column: span 1;
+  height: 2fr;
+  
 }

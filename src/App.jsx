@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
 import Feedback from './pages/Feedback';
 import { MantineProvider } from '@mantine/core';
+import '@mantine/core/styles.css';
 
 function App() {
   return (
